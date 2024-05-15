@@ -1,0 +1,159 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+
+
+/* =========MAIN========== */
+ .container{
+    background-image: url("https://c0.wallpaperflare.com/preview/729/634/463/abstract-backdrop-background-bright.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+    
+} 
+
+
+
+
+
+.Dashboardcss {
+   font-size: larger;
+   font-family: cursive;
+   transition: transform 0.3s;
+   margin-right: 87px;
+   cursor: pointer;
+
+}
+.Dashboardcss:hover {
+   
+   /* transform: translateX(-10px); */
+   transform: scale(1.1);
+ 
+}
+
+main {
+   margin-top: 2.8rem;
+
+   font-family: cursive;
+
+}
+
+.insights {
+   display: grid;
+   grid-template-columns: repeat(3, 0.5fr);
+   gap: 0.5rem;
+
+
+}
+
+
+.expenses {
+   background-color: white;
+   padding: 1.8rem;
+   margin: 1rem;
+   border-radius: 5rem;
+   box-shadow: 0 2rem 3rem rgba(4, 16, 128, 0.18);
+   transition: all 300ms ease;
+   width: 15vw;
+   transition: transform 0.3s;
+   cursor: pointer;
+   
+  
+
+}
+
+.expenses:hover {
+   box-shadow: none;
+   transform: translateY(-10px);
+}
+
+#anchor {
+   background: rgb(103, 76, 76);
+   padding: 0.9rem;
+   border-radius: 100%;
+   color: white;
+   font-size: 2rem;
+}
+
+#anchor2 {
+   background: #ff7782;
+   padding: 0.7rem;
+   border-radius: 50%;
+   color: white;
+   font-size: 2rem;
+}
+
+#anchor3 {
+   background: #41f1b6;
+   padding: 0.7rem;
+   border-radius: 50%;
+   color: white;
+   font-size: 2rem;
+}
+
+#anchor4 {
+   background: #000000;
+   padding: 0.7rem;
+   border-radius: 50%;
+   color: rgb(251, 251, 251);
+   font-size: 2rem;
+}
+
+.middle {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.heading3 {
+   margin: 1rem 0 0 0.6rem;
+   font-size: 1rem;
+}
+
+
+
+.recent-order {
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   text-align: center;
+   width: 80%;
+   /* max-width: 600px; */
+   /* margin: 0 auto;  */
+   margin-left: 50px;
+   margin-top: 20px;
+}
+
+
+.recent-order table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.recent-order th,
+.recent-order td {
+   padding: 10px;
+   border: 1px solid #ccc;
+}
+
+
+.recent-order a {
+   display: grid;
+   margin-top: 15px;
+   text-decoration: none;
+}
+
+#nasaImage{
+   max-width: 50%; 
+   height: 60vh; 
+   display: block;
+   margin: 0 auto;
+   max-height: 30%;
+
+   
+
+}

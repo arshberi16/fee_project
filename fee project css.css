@@ -1,0 +1,165 @@
+
+html{
+    font-size:13px;
+
+}
+
+
+.container{
+    display: grid;
+   
+
+    /* background: beige; */
+    gap: 2.8rem;
+    grid-template-columns: 15rem auto ;
+   
+   overflow-x: hidden;
+    
+}
+
+img{
+    
+    width:100%;
+}
+
+h2{
+    font-size: 1.4rem;
+    
+}
+h3{
+   font-size:0.87rem;  
+} 
+h4{
+    font-size: 0.8rem;
+}
+h5{
+   font-size:0.77rem;
+}
+small{
+    font-size:0.75rem;
+}
+.profile-photo{
+    width:2.8rem;
+    height: 2.8rem;
+    border-radius: 60%;
+    overflow: hidden;
+}
+.text-muted{
+    color: #524a4a;
+}
+p{
+    color:#000000 ;
+}
+b{
+    color: #000000;
+}
+
+
+aside{
+    height: 16vh;
+    width:25vh;
+    background: #9CC3D5FF;
+}
+
+
+/* ============SIDEBAR============ */
+.Sidebar{
+background:#A7BEAE;
+display: flex;
+flex-direction: column;
+height:118.5vh;
+position:relative;
+top: 1rem;
+/* overflow-y: ; */
+
+}
+
+.Sidebar.closed {
+    transform: translateX(-100%);
+}
+
+.Sidebar:not(.closed) {
+    transform: translateX(0);
+}
+#toggleSidebarButton{
+    background-color: #9CC3D5FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* text-align: center; */
+    }
+
+  .button-container {
+    text-align: center;
+    padding-top: 9px;
+}
+
+    
+
+aside h3{
+    font-weight:500;
+}
+ aside .Sidebar a{
+    display: flex;
+    position: relative;
+    color: #000000;
+   
+    align-items: center;
+    height:7rem;
+    transition:all 300ms ease;
+    margin-left: 2rem;
+    gap:1rem;
+        
+}
+ aside .Sidebar a span{
+font-size: 1.6rem;
+transition: all 200ms ease;
+
+}
+aside .Sidebar a.active{
+    background: rgba(132,139,200,0.18);
+    color:#111534 ;
+    margin-left: 0;
+}
+aside .Sidebar a.active:before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background:#000000 ;
+}
+aside .Sidebar a.active span{
+    color: #000000 ;
+    margin-left: calc(1rem-3px);
+}
+
+aside .Sidebar a:hover{
+    color: #f85f07;
+}
+aside .Sidebar a:hover span{
+    margin-left: 1rem;
+}
+aside .Sidebar .message-count{
+    background: #ff7782;
+    color:#fff; 
+    padding: 2px 10px;
+    font-size:11px;
+    border-radius:0.4rem ;
+    
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

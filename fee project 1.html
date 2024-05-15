@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="fee project css.css ">
+    <link rel="stylesheet" href="fee project 2.css ">
+    <link rel="stylesheet" type="text/css" href="your-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        th:hover {
+            background-color: #ddd;
+        }
+
+        .sorted-asc::after {
+            content: ' ▲';
+        }
+
+        .sorted-desc::after {
+            content: ' ▼';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <aside>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const toggleSidebarButton = document.getElementById('toggleSidebarButton');
+                    const sidebar = document.querySelector('.Sidebar');
+
+                    // Add a click event listener to the toggle button
+                    toggleSidebarButton.addEventListener('click', () => {
+                        // Toggle the 'closed' class on the sidebar
+                        sidebar.classList.toggle('closed');
+
+                        // Change button text based on sidebar state
+                        const buttonText = sidebar.classList.contains('closed') ? '>' : 'X';
+                        toggleSidebarButton.textContent = buttonText;
+                    });
+                });
+            </script>
+
+
+
+            <div>
+                <br>
+
+                <center> <em>
+                        <!-- <span class="material-icons"> -->
+                        <!-- account_circle -->
+                        </span>
+                        <h2>Welcome Admin</h2>
+                    </em> </center>
+
+
+            </div>
+            <center>
+                <div class="profile-photo">
+                    <img src="1234.png" alt="admin" height="50px" width="75px">
+            </center>
+
+
+            <div class="button-container">
+                <!-- Toggle Sidebar button -->
+                <button id="toggleSidebarButton" style="color: white;">X</button>
+            </div>
+
+            <div class="Sidebar">
+
+
+
+
+
+
+                <a href="#" class="active">
+                    <span class="material-icons">
+                        dashboard
+                    </span>
+                    <h3><em></em>
+                        Dashboard
+                    </h3>
+                </a>
+
+
+                <a href="#" id="anchor1">
+
+                    <span class="material-icons">
+                        mark_unread_chat_alt
+                    </span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+
+
+
+
+
+                <a href="#" id="anchor1">
+
+                    <span class="material-icons">
+                        storefront
+                    </span>
+                    <h3>Orders</h3>
+
+                </a>
+
+
+                <a href="#" id="anchor1">
+
+                    <span class="material-icons">
+                        insights
+                    </span>
+                    <h3>Insights</h3>
+                </a>
+
+
+
+
+
+                <a href="#" id="anchor1">
+
+                    <span class="material-icons">
+                        paid
+                    </span>
+                    <h3>Monetization </h3>
+                </a>
+                <a href="#" id="anchor1">
+                    <span class="material-icons">
+                        event
+                    </span>
+                    <h3>Upcomming Events</h3>
+
+                </a>
+
+
+                <a href="#" id="anchor1">
+
+                    <span class="material-icons">
+                        description
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="settings.html" id="anchor1">
+
+                    <span class="material-icons">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+
+
+                <a href="#" id="anchor1">
+                    <span class="material-icons">
+                        switch_account
+                    </span>
+                    <h3>Switch Accounts</h3>
+
+                </a>
+                <a href="Support.html" id="anchor1">
+                    <span class="material-icons">
+                        connect_without_contact
+                        </span>
+                    <h3>Support</h3>
+
+                </a>
+
+
+                <a href="logout.html" id="anchor1">
+
+                    <span class="material-icons">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+
+
+
+            </div>
+        </aside>
+
+        <!-- Side bar khatm  -->
+
+
+        <!-- mainnnnnnnnnn -->
+        <main class="main">
+            <div class="Dashboardcss" id="Dashboardcss">
+                <center>
+                    <h1 style="color: white;" class="animate__animated animate__bounceInDown">ALPHA'ZZ DASHBOARD</h1>
+                </center>
+            </div>
+
+            <br><br>
+            <div class="insights">
+                <div class="expenses">
+                    <div class="item1">
+                        <center>
+                            <a href="#" id="anchor">
+                                <span class="material-icons">
+                                    group_add
+                                </span>
+                            </a>
+                        </center>
+                        <br><br>
+                        <div class="middle">
+                            <div class="left">
+                                <h2 class="heading3">Followers</h2>
+                                <h1>500M</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- =====END OF Followers==== -->
+                <div class="expenses">
+                    <center>
+                        <a href="#" id="anchor2">
+                            <span class="material-icons">
+                                photo_library
+                            </span>
+                        </a>
+                    </center>
+                    <br><br>
+                    <div class="middle">
+                        <div class="left">
+                            <h2 class="heading3">Posts</h2>
+                            <h1 class="post-count">101M</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- NEW  -->
+                <div class="expenses">
+                    <center>
+                        <a href="#" id="anchor4">
+                            <span class="material-icons">
+                                stacked_line_chart
+                            </span>
+                        </a>
+                    </center>
+                    <br><br>
+                    <div class="middle">
+                        <div class="left">
+                            <h2 class="heading3">Reach</h2>
+                            <h1 class="post-count">6.9M</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- new2 -->
+                <div class="expenses">
+                    <center>
+                        <a href="#" id="anchor2">
+                            <span class="material-icons">
+                                favorite
+                            </span>
+                        </a>
+                    </center>
+                    <br><br>
+                    <div class="middle">
+                        <div class="left">
+                            <h2 class="heading3">Likes</h2>
+                            <h1 class="post-count">200M</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- new3 -->
+                <div class="expenses">
+                    <center>
+                        <a href="#" id="anchor3">
+                            <span class="material-icons">
+                                chat_bubble
+                            </span>
+                        </a>
+                    </center>
+                    <br><br>
+                    <div class="middle">
+                        <div class="left">
+                            <h2 class="heading3">Comments</h2>
+                            <h1 class="post-count">15M</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- =====END OF EXPENSES===== -->
+
+                <div class="expenses">
+                    <center>
+                        <a href="#" id="anchor3">
+                            <span class="material-icons">
+                                paid
+                            </span>
+                        </a>
+                    </center>
+                    <br><br>
+                    <div class="middle">
+                        <div class="left">
+                            <h3 class="heading3">Income</h3>
+                            <h1>$100M</h1>
+                        </div>
+
+                    </div>
+                    <center><small class="text-muted">Last 24 Hours</small></center>
+                </div>
+            </div>
+
+            <!--========END OF INSIGHTS=======  -->
+            <div class="recent-order">
+                <h2>Popular Accounts</h2>
+                <table id="accountTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">User Name</th>
+                            <th onclick="sortTable(1)">Followers</th>
+                            <th onclick="sortTable(2)">Income</th>
+                            <th onclick="sortTable(3)">Reach</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Will Smith</td>
+                            <td>12M</td>
+                            <td>150K</td>
+                            <td style="color:green">20K</td>
+                        </tr>
+                        <tr>
+                            <td>Tom Hanks</td>
+                            <td>67M</td>
+                            <td>120K</td>
+                            <td style="color:green">52K</td>
+                        </tr>
+                        <tr>
+                            <td>Demi Lorence</td>
+                            <td>47K</td>
+                            <td>70K</td>
+                            <td style="color:green">8K</td>
+                        </tr>
+                        <tr>
+                            <td>Mea Bibi</td>
+                            <td>98k</td>
+                            <td>40k</td>
+                            <td style="color:green">55k</td>
+                        </tr>
+                        <tr>
+                            <td>Jack Man</td>
+                            <td>5M</td>
+                            <td>22k</td>
+                            <td style="color:green">9k</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br> <br>
+            <br>
+            <script>
+                function sortTable(columnIndex) {
+                    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("accountTable");
+                    switching = true;
+                    dir = "asc";
+            
+                    while (switching) {
+                        switching = false;
+                        rows = table.rows;
+            
+                        for (i = 1; i < rows.length - 1; i++) {
+                            shouldSwitch = false;
+                            x = rows[i].getElementsByTagName("td")[columnIndex];
+                            y = rows[i + 1].getElementsByTagName("td")[columnIndex];
+            
+                            if (dir === "asc" ? x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() : x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+            
+                        if (shouldSwitch) {
+                            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                            switching = true;
+                            switchcount++;
+                        } else {
+                            if (switchcount === 0 && dir === "asc") {
+                                dir = "desc";
+                                switching = true;
+                            }
+                        }
+                    }
+            
+                    // Remove previous sorting indicators
+                    var ths = document.getElementsByTagName("th");
+                    for (var j = 0; j < ths.length; j++) {
+                        ths[j].classList.remove("sorted-asc", "sorted-desc");
+                    }
+            
+                    // Add new sorting indicator
+                    table.rows[0].cells[columnIndex].classList.add(dir === "asc" ? "sorted-asc" : "sorted-desc");
+                }
+                </script>
+                </table>
+                <!-- <center><a href="#" style="color: black;">Show All</a></center> -->
+                <script>
+                    const apiKey = 'kVKpmnCFQBHkReDXIWXIX2v2hV4rzspG9Xar8WsX';
+                    const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
+                
+                    // Make a GET request to the NASA APOD API
+                    fetch(apiUrl)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`HTTP error! Status: ${response.status}`);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            // Check if the media type is an image
+                            if (data.media_type === 'image') {
+                                // Call a function to display the data on your website
+                                displayNASAData(data);
+                            } else {
+                                console.error('Media type is not an image:', data);
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching data from NASA API:', error);
+                            // You can provide a fallback or error message here
+                        });
+                
+                    function displayNASAData(data) {
+                        // Handle the data and update your website with the fetched information
+                        // For example, you can set the image source and title
+                        const imageElement = document.getElementById('nasaImage');
+                        const titleElement = document.getElementById('nasaTitle');
+                
+                        imageElement.src = data.url;
+                        imageElement.alt = data.title; // Set alt attribute for accessibility
+                        titleElement.textContent = data.title;
+                    }
+                </script>
+                <div>
+                   <center> <h2>Trending Image of the Day</h2></center>
+                   <br>
+                    <img id="nasaImage" alt="Image">
+                    <p id="nasaTitle"></p>
+                </div>
+            </div>
+            <br>
+
+            <br><br>
+            
+            
+        </main>
+
+    </div>
+
+</body>
+
+</html>

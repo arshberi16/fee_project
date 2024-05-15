@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <header>
+    <h1>ALPHA'ZZ Settings</h1>
+  </header>
+
+  <main>
+    <section class="settings-section">
+      <h2>Profile Settings</h2>
+      <form id="profileSettingsForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Write something about yourself"></textarea>
+
+        <label for="profileImage">Profile Image URL:</label>
+        <input type="url" id="profileImage" name="profileImage" placeholder="Enter the URL of your profile image">
+
+        <input type="submit" value="Save Profile Settings">
+      </form>
+    </section>
+
+    <section class="settings-section">
+      <h2>Privacy Settings</h2>
+      <form id="privacySettingsForm">
+        <label for="visibility">Profile Visibility:</label>
+        <select id="visibility" name="visibility">
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+
+        <label for="notifications">Email Notifications:</label>
+        <input type="checkbox" id="notifications" name="notifications" checked>
+        <span>Receive email notifications</span>
+
+        <input type="submit" value="Save Privacy Settings">
+      </form>
+    </section>
+
+    <!-- More sections for additional settings -->
+
+  </main>
+
+</body>
+</html>
